@@ -13,3 +13,4 @@ venv/
 
 livekit.yml
 .idea
+crates/delta/revolt-delta

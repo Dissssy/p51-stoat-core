@@ -37,9 +37,10 @@ pub async fn report_content(
     })?;
 
     // Bots cannot create reports
-    if user.bot.is_some() {
-        return Err(create_error!(IsBot));
-    }
+    // if user.bot.is_some() {
+    //     return Err(create_error!(IsBot));
+    // }
+    // Disabled to allow my internal bot to report content based on automated moderation rules
 
     // Find the content and create a snapshot of it
     // Also retrieve any references to Files
